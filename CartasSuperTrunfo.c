@@ -1,22 +1,57 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+ // Carta 1
+ char codigo1[4];
+ int populacao1,pontos1;
+ float area1, pib1;
+ 
+ // Carta 2
+ char codigo2[4];
+ int populacao2,pontos2;
+ float  area2, pib2;
+
+ // cadastro de carta 1
+ printf("Digite o codigo da carta 1  (ex: A01): ");
+ scanf ("%s", codigo1);
+
+ printf("Digite a populacao da carta 1: ");
+ scanf("%d" ,&populacao1);
+
+ printf("Digite a area da carta 1 (km²): ");
+ scanf("%f" , &area1);
+
+ printf("Digite o PIB da carta 1 (bilhoes): ");
+ scanf("%f" , &pib1);
+
+ printf("Digite o numero de pontos turisticos da carta 1: ");
+ scanf("%d" , &pontos1);
+
+ printf ("\n");
+
+ // cadastro da carta 2
+
+ printf("Digite o codigo da carta 2 (ex:B02): ");
+ scanf("%s" , codigo2);
+
+ printf("Digite a populacao da carta 2: " );
+ scanf("%d", &populacao2);
+ 
+ printf("Digite a area da carta 2 (km²): ");
+ scanf("%f" , &area2);
+
+ printf("Digite o PIB da carta 2 (bilhoes): ");
+ scanf("%f" , &pib2);
+
+ printf("Digite o numero de pontos turisticosda carta 2: ");
+ scanf("%d" , &pontos2);
+
+ printf("\n=== CARTAS CADASTRADAS ===\n");
+ printf("Carta 1-> Codigo: %s | Populacao: %d |Area: %.2f km² |  PIB: %.2f bilhoes | Pontos:%d\n",
+  codigo1, populacao1, area1, pib1 , pontos1);
+ printf("Cartas 2 -> Codigo: %s | Populacao: %d | Area: %.2f km² | PIB: %.2f bilhoes | Pontos: %d\n",
+  codigo2, populacao2 , area2, pib2 , pontos2);
+
 
     return 0;
 }
