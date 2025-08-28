@@ -43,7 +43,7 @@ int main() {
  printf("Digite o PIB da carta 2 (bilhoes): ");
  scanf("%f" , &pib2);
 
- printf("Digite o numero de pontos turisticosda carta 2: ");
+ printf("Digite o numero de pontos turisticos da carta 2: ");
  scanf("%d" , &pontos2);
 
  printf("\n=== CARTAS CADASTRADAS ===\n");
